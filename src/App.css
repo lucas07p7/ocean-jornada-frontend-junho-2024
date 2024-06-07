@@ -1,3 +1,10 @@
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
 .card{
   border: 1px solid black;
   color: black;
@@ -20,7 +27,7 @@
   border-left: 6px solid #a9d3e9;
 }
 
-.card .tag{
+.card .tags{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -28,7 +35,7 @@ gap: 8px;
 margin: 16px;
 }
 
-.card tag div{
+.card .tags div{
   background-color: white;
   color: black;
   padding: 6px 16px;
