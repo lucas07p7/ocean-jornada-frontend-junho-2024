@@ -1,5 +1,6 @@
 .card{
   border: 1px solid black;
+  color: black;
   padding: 16px;
   border-radius: 16px;
   width: 330px;
@@ -9,14 +10,40 @@
 }
 
 .card:hover{
-  box-shadow: 3px 3px black;
-  translate: -3px -3px;
+  box-shadow: 5px 5px black;
+  translate: -5px -5px;
 }
 
 .card h2{
-  font-size: 32px;
+  font-size: 24px;
+  font-family: sans-serif;
+  border-left: 6px solid #a9d3e9;
+}
+
+.card .tag{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 8px;
+margin: 16px;
+}
+
+.card tag div{
+  background-color: white;
+  color: black;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
   font-family: sans-serif;
 }
+
+.nome{
+  border-left: 10px solid rgb(45, 171, 206);
+  border-radius: 4px;
+  color: black;
+}
+
 
 .card img{
   border-radius: 16px;
