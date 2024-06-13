@@ -46,16 +46,12 @@ function App() {
 
   return (
     <>
-    <div className="cards">
-    {/* Para cada um dos itens da lista, exibir um Card*/}
-    {itens.map(function (elemento){
-    return <Card item={elemento} key = {elemento.name}/>
-   })}
-
-    </div> 
-      </>
+      <div className="cards">
+        {/* Para cada um dos itens da lista, exibir um Card */}
+        {itens.map(elemento => <Card item={elemento} key={elemento.name} />)}
+      </div>
+    </>
   )
-
 }
-export default App
 
+export default App
