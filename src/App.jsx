@@ -1,6 +1,7 @@
-import { isElementOfType } from 'react-dom/test-utils'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Card from './components/Card/Card'
+
 
 function App() {
   // const item1 = {
@@ -21,7 +22,7 @@ function App() {
   // //Lista (arrays)
   // const itens = [item1, item2, item3]
 
-  const itens = []
+  const [itens, setItens] = useState([])
 
   async function carregarDados(){
 
@@ -31,10 +32,16 @@ function App() {
 
   const body = await response.json()
 
-  console.log(body)
+  const results = body.results
+  console.log('results', results)
+
+  setItens(results)
   }
 
-  carregarDados()
+  useEffect(function () {
+    carregarDados()
+  }, [])
+
 
 
   return (
