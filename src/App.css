@@ -1,42 +1,42 @@
-.cards{
+.cards {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
 }
 
-.card{
+.card {
   border: 1px solid black;
-  color: black;
   padding: 16px;
   border-radius: 16px;
   width: 330px;
   text-align: center;
-  background-color: #f0f0f0;
+  background: #f0f0f0;
   transition: all 0.15s ease-in-out;
+  cursor: pointer;
 }
 
-.card:hover{
-  box-shadow: 5px 5px black;
-  translate: -5px -5px;
+.card:hover {
+  box-shadow: 3px 3px black;
+  translate: -3px -3px;
 }
 
-.card h2{
-  font-size: 24px;
+.card h2 {
+  font-size: 32px;
   font-family: sans-serif;
-  border-left: 6px solid #a9d3e9;
+  border-left: 6px solid #A9D3E9;
 }
 
-.card .tags{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 8px;
-margin: 16px;
+.card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px;
 }
 
-.card .tags div{
-  background-color: white;
+.card .tags div {
+  background: white;
   color: black;
   padding: 6px 16px;
   border-radius: 8px;
@@ -45,13 +45,6 @@ margin: 16px;
   font-family: sans-serif;
 }
 
-.nome{
-  border-left: 10px solid rgb(45, 171, 206);
-  border-radius: 4px;
-  color: black;
-}
-
-
-.card img{
+.card img {
   border-radius: 16px;
 }
