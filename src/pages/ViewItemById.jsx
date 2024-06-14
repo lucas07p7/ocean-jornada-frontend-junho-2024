@@ -28,7 +28,9 @@ function ViewItemById() {
   return (
     <>
       <div className="view_item">
+        <button className="home">
         <Link to="/">Voltar para Home</Link>
+        </button>
 
         <h1>{item.name}</h1>
 
