@@ -42,3 +42,8 @@ background-color: #2e7fab;
     border-radius: 16px;
     background: #fafafa;
 }
+
+.attribute:hover{
+    box-shadow: 3px 3px black;
+    translate: -3px -3px;
+}
