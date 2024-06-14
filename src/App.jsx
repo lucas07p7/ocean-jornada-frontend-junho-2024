@@ -10,15 +10,15 @@ const router = createBrowserRouter([
   },
   {
     path: '/item/:itemId',
-    element: <ViewItemById/>
+    element: <ViewItemById />
   }
 ])
 
 function App() {
-  
+
   return (
     <>
-     <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
   )
 }

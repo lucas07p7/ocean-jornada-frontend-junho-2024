@@ -23,18 +23,18 @@ function Home() {
 
   const [itens, setItens] = useState([])
 
-  async function carregarDados(){
+  async function carregarDados() {
 
-  const apiUrl = 'https://rickandmortyapi.com/api/character'
+    const apiUrl = 'https://rickandmortyapi.com/api/character'
 
-  const response = await fetch(apiUrl)
+    const response = await fetch(apiUrl)
 
-  const body = await response.json()
+    const body = await response.json()
 
-  const results = body.results
-  console.log('results', results)
+    const results = body.results
+    console.log('results', results)
 
-  setItens(results)
+    setItens(results)
   }
 
   useEffect(function () {

@@ -6,16 +6,16 @@ import { useParams } from 'react-router-dom'
 function ViewItemById() {
   const [item, setItem] = useState()
 
-  const { itemId} = useParams()
+  const { itemId } = useParams()
 
-  async function carregarDados(){
-  const apiUrl = 'https://rickandmortyapi.com/api/character/' + itemId
+  async function carregarDados() {
+    const apiUrl = 'https://rickandmortyapi.com/api/character/' + itemId
 
-  const response = await fetch(apiUrl)
+    const response = await fetch(apiUrl)
 
-  const body = await response.json()
+    const body = await response.json()
 
-  setItem(body)
+    setItem(body)
   }
 
   useEffect(function () {
